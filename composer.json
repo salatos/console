@@ -16,12 +16,11 @@
     }
   ],
   "require": {
-    "php": ">=7.2",
-    "contributte/di": "^0.5.1",
+    "php": "^8.0",
+    "nette/di": "^2.4",
     "symfony/console": "^4.2.9|^5.0.0|^6.0.0"
   },
   "require-dev": {
-    "nette/http": "~3.0.1",
     "ninjify/nunjuck": "^0.4",
     "ninjify/qa": "^0.12",
     "phpstan/phpstan": "^1.0",
@@ -44,7 +43,10 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "config": {
-    "sort-packages": true
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
   },
   "extra": {
     "branch-alias": {
